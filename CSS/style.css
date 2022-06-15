@@ -1,0 +1,135 @@
+body{
+    background-image: url("../Images/fondo.png");
+}
+
+fondo{
+    position: relative;
+}
+
+.marco{
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+    width: min-content;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font: oblique 80% cursive;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    color: white;
+    font: oblique bold 85% cursive;
+}
+.prefondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1000px;
+    height: 630px;
+    background-color: lightskyblue;
+
+/* Created with https://www.css-gradient.com */
+background: #CA0101;
+background: -webkit-linear-gradient(bottom, #CA0101, #BFB6C4);
+background: -moz-linear-gradient(bottom, #CA0101, #BFB6C4);
+background: linear-gradient(to top, #CA0101, #BFB6C4);
+
+    filter: Alpha(Opacity=0.99);
+    opacity: 0.50;
+    border-radius: 19px 19px 19px 19px;
+    border: 2px solid darkred;
+}
+
+.menu{
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    height: 25px;
+    width: 1000px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(21, 187, 205);
+    filter: Alpha(Opacity=0.99);
+    opacity: 0.90;
+    
+}
+
+p{
+    position: relative;
+    margin: 0 auto;
+    border-left: 10px;
+    border-right: 10px;
+    width: 1004px;
+    color: white;
+    font: oblique bold 85% cursive;
+    text-align: center;
+    filter: Alpha(Opacity=0.99);
+    opacity: 0.80;
+}
+
+img{
+    width: 900px;
+    height: 500px;
+    border-radius: 19px 19px 19px 19px;
+    border: 1px solid blue;
+    background-size: cover;
+}
+
+.proximidad{
+    background-image: url("../Images/proximidad.gif");
+}
+
+.temperatura{
+    background-image: url("../Images/temperatura.gif");
+}
+
+.corriente{
+    background-image: url("../Images/corriente.gif");
+}
+
+.humo{
+    background-image: url("../Images/Humo.gif");
+}
+
+.gas{
+    background-image: url("../Images/Gas.gif");
+}
+
+.topologia{
+    background-image: url("../Images/Topologia.png");
+}
+
+
+
+p.ayuda_txt:before{
+    content: "Aplicación que recibe un valor de niveles de sonido de algún dispositivo IoT, y dependiendo del nivel enviara una alerta a un dispositivo IoT de salida.";
+}
+
+p.fuego_txt:before{
+    content: "Aplicación que recibe un valor de temperatura de algún dispositivo IoT, y dependiendo del nivel enviara una alerta a un dispositivo IoT de salida.";
+}
+
+p.camaras_txt:before{
+    content: "La cámara cuando el sensor detecte una persona, activará la alarma a través del sistema de control de vinculación back-end.";
+}
+
+p.humo_txt:before{
+    content: "Aplicación que recibe señales de humo en algún dispositivo IoT, si el nivel de humo es exedente enviara una alerta a un dispositivo IoT de salida.";
+}
+
+p.gas_txt:before{
+    content: "Aplicación que recibe señales de fugas de gas en algún dispositivo IoT, si el nivel de gas es exedente enviara una alerta a un dispositivo IoT de salida."";
+}
+
+p.topologia_txt:before{
+    content: "Topología";
+}
+

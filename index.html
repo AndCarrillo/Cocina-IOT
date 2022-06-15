@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cocina Inteligente</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="CSS/style.css" rel="stylesheet">
+        <script>
+            function click(event) {
+                t = 'salir';
+                switch (event.target.id) {
+                    case 'pr':
+                        t = 'proximidad';
+                        break;
+                    case 'te':
+                        t = 'temperatura';
+                        break;
+                    case 'co':
+                        t = 'corriente';
+                        break;
+                    case 'hu':
+                        t = 'humo';
+                        break;
+
+                    case 'ga':
+                        t = 'gas';
+                        break;
+                    case 'to':
+                        t = 'topologia';
+                        break;
+                    
+                }
+                g = document.getElementById("pantalla");
+                m = document.getElementById("mensaje");
+                g.className = t;
+                m.className = t + "_txt";
+            }
+
+            function loaded(event) {
+                document.querySelectorAll("button").forEach((c) => {
+                    c.addEventListener("click", click);
+                })
+            }
+
+            document.addEventListener("DOMContentLoaded", loaded);
+        </script>
+    </head>
+    <body>
+        <div class="fondo">
+            <div class="prefondo"></div>
+            <div class="menu">
+                <button id="pr" >Sensor de Proximidad</button>
+                <button id="te" >Sensor de Temperatura</button>
+                <button id="co" >Sensor de Corriente</button>
+                <button id="hu" >Sensor de Humo</button>
+                <button id="ga" >Sensor de Fugas de Gas</button>
+                <button id="to" >Topología</button>
+            </div>
+            <div class="marco">
+                <img id="pantalla" class="salir">
+            </div>
+            <p id="mensaje" class="salir_txt"></p>
+        </div>
+    </body>
+</html>
