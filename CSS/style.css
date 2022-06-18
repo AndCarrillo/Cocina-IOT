@@ -107,29 +107,3 @@ img{
     background-image: url("../Images/Topologia.png");
 }
 
-
-
-p.ayuda_txt:before{
-    content: "Aplicación que recibe un valor de niveles de sonido de algún dispositivo IoT, y dependiendo del nivel enviara una alerta a un dispositivo IoT de salida.";
-}
-
-p.fuego_txt:before{
-    content: "Aplicación que recibe un valor de temperatura de algún dispositivo IoT, y dependiendo del nivel enviara una alerta a un dispositivo IoT de salida.";
-}
-
-p.camaras_txt:before{
-    content: "La cámara cuando el sensor detecte una persona, activará la alarma a través del sistema de control de vinculación back-end.";
-}
-
-p.humo_txt:before{
-    content: "Aplicación que recibe señales de humo en algún dispositivo IoT, si el nivel de humo es exedente enviara una alerta a un dispositivo IoT de salida.";
-}
-
-p.gas_txt:before{
-    content: "Aplicación que recibe señales de fugas de gas en algún dispositivo IoT, si el nivel de gas es exedente enviara una alerta a un dispositivo IoT de salida."";
-}
-
-p.topologia_txt:before{
-    content: "Topología";
-}
-
