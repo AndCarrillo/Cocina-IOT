@@ -107,3 +107,25 @@ img{
     background-image: url("../Images/Topologia.png");
 }
 
+p.proximidad_txt:before{
+    content: "";
+}
+
+p.temperatura_txt:before{
+    content: "";
+}
+p.corriente_txt:before{
+    content: "";
+}
+
+p.humo_txt:before{
+    content: "";
+}
+
+p.gas_txt:before{
+    content: "";
+}
+
+p.topologia_txt:before{
+    content: "Topología";
+}
