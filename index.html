@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="es">
     <head>
-        <title>Cocina Inteligente</title>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="CSS/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href=".images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="responsive.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <title>Cocina Inteligente</title>
         <script>
             function click(event) {
                 t = 'salir';
@@ -35,9 +37,8 @@ and open the template in the editor.
                     
                 }
                 g = document.getElementById("pantalla");
-                m = document.getElementById("mensaje");
                 g.className = t;
-                m.className = t + "_txt";
+                
             }
 
             function loaded(event) {
@@ -50,20 +51,31 @@ and open the template in the editor.
         </script>
     </head>
     <body>
-        <div class="fondo">
-            <div class="prefondo"></div>
-            <div class="menu">
-                <button id="pr" >Sensor de Proximidad</button>
-                <button id="te" >Sensor de Temperatura</button>
-                <button id="co" >Sensor de Corriente</button>
-                <button id="hu" >Sensor de Humo</button>
-                <button id="ga" >Sensor de Fugas de Gas</button>
-                <button id="to" >Topología</button>
+        <main class="container">
+            <div class="header-btn">
+                
+                <img src="images/logo.png" class="logo-title" />
+                
+                <button id="pr" type="submit">Sensor de Proximidad</button>
+                <button id="te" type="submit">Sensor de Temperatura</button>
+                <button id="co" type="submit">Sensor de Corriente</button>
+                <button id="hu" type="submit">Sensor de Humo</button>
+                <button id="ga" type="submit">Sensor de Fugas de Gas</button>
+                <button id="to" type="submit">Topología</button>
             </div>
+
             <div class="marco">
                 <img id="pantalla" class="salir">
             </div>
-            <p id="mensaje" class="salir_txt"></p>
-        </div>
+
+
+        <footer>
+            <div class="container-social">
+                <p class="student-information">
+                PRESENTADO POR: Andrea Carrillo Oporto - Jerry Solera Celestino
+                </p>
+            </div>
+        </footer>
+        </main>
     </body>
 </html>
